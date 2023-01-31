@@ -6,6 +6,7 @@ User.hasMany(Blog, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
+//User has many
 
 Blog.belongsTo(User, {
   foreignKey: 'user_id'
