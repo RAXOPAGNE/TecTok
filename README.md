@@ -52,7 +52,7 @@ For this project, we collaborated as a group to build a full-stack app using Nod
 
 
 ## Deployment
-The blog site is deployed on Heroku via the URL https://1drv.ms/p/s!AtvlHftB9Vs14kPVb-obsei-JGr4?e=xEcqFF
+The blog site is deployed on Heroku via the URL https://floating-cliffs-02512.herokuapp.com/
 
 ## Contributors
 Seema Bibi, Winnie Thomas, Adiba Sajid, Oskar Zaorski, Keesha Murray.
