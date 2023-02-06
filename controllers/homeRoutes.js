@@ -13,11 +13,11 @@ router.get('/', async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const Blogs = BlogData.map((blog) => blog.get({ plain: true }));
-
+    const blogs = BlogData.map((blog) => blog.get({ plain: true }));
+console.log (blogs)
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-      Blogs, 
+      blogs, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -41,10 +41,10 @@ router.get('/blog/:id', async (req, res) => {
           },
         ],
     });
-    const Blogs = BlogData.get({ plain: true });
+    const blogs = BlogData.get({ plain: true });
 
     res.render('blog', {
-      ...Blogs,
+      blogs,
       logged_in: req.session.logged_in
     });
   } catch (err) {
